@@ -1,0 +1,6 @@
+.slide {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--pimary-background-color);
+    color: var(--pimary-text-color);
+}

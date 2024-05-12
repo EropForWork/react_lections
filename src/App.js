@@ -1,10 +1,10 @@
 import './App.css';
+import Slide from './components/slide/slide';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
+      <Slide />
     </div>
   );
 }
