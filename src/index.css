@@ -1,6 +1,7 @@
 :root {
   --pimary-background-color: rgb(35, 32, 68);
   --pimary-text-color: rgb(194, 194, 194);
+  --pimary-text-over-color: rgb(81, 230, 222);
 }
   
 body {

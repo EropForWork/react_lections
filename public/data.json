@@ -3,7 +3,21 @@
         {
             "id": 1,
             "title": "Slide 1",
-            "subtitle": "Slide 1 description"
+            "subtitle": "Slide 1 description",
+            "columns": [
+                {
+                    "textContent": [
+                        "Slide 1, Column 1, p1",
+                        "Slide 1, Column 1, p2"
+                    ]
+                },
+                {
+                    "textContent": [
+                        "Slide 1, Column 2, p1",
+                        "Slide 1, Column 2, p2"
+                    ]
+                }
+            ]
         },
         {
             "id": 2,

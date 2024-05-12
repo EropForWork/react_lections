@@ -4,6 +4,8 @@ import './slideTitle.css';
 export default function SlideTitle({ value }) {
 
     return (
-        <h1 className="slide-title">{value}</h1>
+        <div className="slide-title-container">
+            <h1 className="slide-title">{value}</h1>
+        </div>
     )
 }
