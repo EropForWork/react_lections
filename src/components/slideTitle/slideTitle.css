@@ -1,0 +1,18 @@
+.slide-title-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+
+    .slide-title {
+        width: max-content;
+        padding-left: 1%;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    .slide-title:hover {
+        color: var(--pimary-text-over-color);
+    }
+}
