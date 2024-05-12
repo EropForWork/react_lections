@@ -1,11 +1,13 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
-// Создаем контекст
 const slideContext = createContext();
 
-// Компонент-провайдер, который будет оборачивать другие компоненты
-const SlideContextProvider = ({ children }) => {
-    const [value, setValue] = useState('initial value');
+const SlideContextProvider = ({ children, jsonData }) => {
+    const [value, setValue] = useState([]);
+
+    useEffect(() => {
+        if (jsonData) setValue(jsonData.slides || []);
+    }, [jsonData]);
 
     return (
         <slideContext.Provider value={{ value, setValue }}>
@@ -14,7 +16,6 @@ const SlideContextProvider = ({ children }) => {
     );
 };
 
-// Хук для использования значения контекста в других компонентах
 const useSlideContext = () => useContext(slideContext);
 
 export { SlideContextProvider, useSlideContext };

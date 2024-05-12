@@ -1,0 +1,14 @@
+{
+    "slides": [
+        {
+            "id": 1,
+            "title": "Slide 1",
+            "subtitle": "Slide 1 description"
+        },
+        {
+            "id": 2,
+            "title": "Slide 2",
+            "subtitle": "Slide 2 description"
+        }
+    ]
+}
