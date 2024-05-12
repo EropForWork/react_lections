@@ -1,10 +1,13 @@
 import './App.css';
 import Slide from './components/slide/slide';
+import { SlideContextProvider } from './components/slideContext/slideContext';
 
 function App() {
   return (
     <div className="App">
-      <Slide />
+      <SlideContextProvider>
+        <Slide />
+      </SlideContextProvider>
     </div>
   );
 }
