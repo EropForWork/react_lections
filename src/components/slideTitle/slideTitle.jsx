@@ -1,13 +1,11 @@
 import React from "react";
 import './slideTitle.css';
 
-export default function SlideTitle({ value }) {
-    const handleClick = (e) => {
-        console.log(e.target);
-    };
+export default function SlideTitle({ value, changeSlide }) {
+
     return (
-        <div className="slide-title-container" onClick={handleClick}>
-            <h1 className="slide-title">{value}</h1>
+        <div className="slide-title-container">
+            <h1 className="slide-title" onClick={changeSlide}>{value}</h1>
         </div>
     )
 }

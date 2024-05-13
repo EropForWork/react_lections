@@ -22,7 +22,15 @@
         {
             "id": 2,
             "title": "Slide 2",
-            "subtitle": "Slide 2 description"
+            "subtitle": "Slide 2 description",
+            "columns": [
+                {
+                    "textContent": [
+                        "Slide 2, Column 1, p1",
+                        "Slide 2, Column 1, p2"
+                    ]
+                }
+            ]
         }
     ]
 }
