@@ -3,9 +3,8 @@
     height: 100%;
     background-color: var(--pimary-background-color);
     color: var(--pimary-text-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 6% 94%;
+    align-items: top;
     text-align: center;
 }
