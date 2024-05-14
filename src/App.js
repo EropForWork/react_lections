@@ -21,6 +21,10 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { SlideContextProvider } from './components/slideContext/slideContext';
 import Slide from './components/slide/slide';
+import NavBar from './components/navBar/navBar';
+import LectionContainer from './components/lectionContainer/lectionContainer';
+
+
 
 function App() {
   const [jsonData, setJsonData] = useState(null);
@@ -58,7 +62,10 @@ function App() {
   return (
     <div className="App">
       <SlideContextProvider jsonData={jsonData}>
-        <Slide />
+        <LectionContainer>
+          <NavBar />
+          <Slide />
+        </LectionContainer>
       </SlideContextProvider>
     </div>
   );

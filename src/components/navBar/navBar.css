@@ -1,0 +1,7 @@
+.nav-bar-container {
+    width: 98vw;
+    height: 4vh;
+    display: flex;
+    padding: .5vw;
+}
+

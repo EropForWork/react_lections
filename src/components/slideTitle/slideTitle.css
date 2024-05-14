@@ -9,10 +9,6 @@
     .slide-title {
         width: max-content;
         padding-left: 1%;
-        cursor: pointer;
         transition: all 0.3s;
-    }
-    .slide-title:hover {
-        color: var(--pimary-text-over-color);
     }
 }

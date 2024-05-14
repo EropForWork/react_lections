@@ -1,3 +1,5 @@
 .slide-text-content-container {
-    .slide-text-content {}
+    .slide-text-content {
+        text-align: left;
+    }
 }
