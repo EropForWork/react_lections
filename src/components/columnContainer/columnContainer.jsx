@@ -9,7 +9,6 @@ export default function ColumnContainer({ value }) {
             {value.map((column, index) => (
                 <Column key={index} value={column} />
             ))}
-            {/* <span className="slide-text-content">{value}</span> */}
         </div>
     )
 }
