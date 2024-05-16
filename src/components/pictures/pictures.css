@@ -9,6 +9,7 @@
   .image {
     width: 100%;
     height: auto;
+    border-radius: 1vw;
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
   }
