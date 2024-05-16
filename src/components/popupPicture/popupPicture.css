@@ -5,9 +5,10 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
     align-items: center;
+    grid-template-columns: 90% 10%;
     z-index: 1000;
     opacity: 0;
     transition: all 0.3s;
@@ -24,4 +25,32 @@
     max-width: 100%;
     max-height: 80vh;
     border-radius: 1vw;
+}
+
+.image-column {
+    height: 100%;
+    /* flex: 2; */
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    background-color: rgba(209, 208, 207, 0.7);
+    overflow: auto;
+    /* overflow-y: auto; */
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.5vw;
+    border-left: 2px solid var(--pimary-button-background-color);
+
+    img {
+        position: relative;
+        left: 0;
+        width: 100%;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        border-radius: 1vw;
+    }
+
+    img:hover {
+        left: -1vw;
+    }
 }

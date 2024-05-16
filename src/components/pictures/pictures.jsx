@@ -34,7 +34,7 @@ const ImageComponent = ({ value }) => {
             {value.map((image, index) => (
                 <img className='image' key={index} src={image} alt="" onClick={() => handleClick(image)} />
             ))}
-            {showPopup && <PopupPicture ref={popupRef} imageSrc={selectedImage} onClose={closePopup} />}
+            {showPopup && <PopupPicture ref={popupRef} images={value} imageSrc={selectedImage} onClose={closePopup} />}
         </div>
     );
 };
