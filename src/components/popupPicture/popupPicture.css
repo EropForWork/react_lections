@@ -34,9 +34,7 @@
     flex-direction: column;
     gap: 1vw;
     background-color: rgba(209, 208, 207, 0.7);
-    overflow: auto;
-    /* overflow-y: auto; */
-    justify-content: center;
+    overflow-y: auto;
     align-items: center;
     padding-left: 0.5vw;
     border-left: 2px solid var(--pimary-button-background-color);
@@ -51,6 +49,6 @@
     }
 
     img:hover {
-        left: -1vw;
+        left: -0.5vw;
     }
 }
