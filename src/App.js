@@ -1,30 +1,9 @@
-// import React from 'react';
-// import './App.css';
-// // import Slide from './components/slide/slide';
-
-
-// function App() {
-//   console.log(1);
-//   return (
-//     <div className="App">
-//       {/* <SlideContextProvider> */}
-//         {/* <Slide /> */}
-//       {/* </SlideContextProvider> */}
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { SlideContextProvider } from './components/slideContext/slideContext';
 import Slide from './components/slide/slide';
 import NavBar from './components/navBar/navBar';
 import LectionContainer from './components/lectionContainer/lectionContainer';
-
-
 
 function App() {
   const [jsonData, setJsonData] = useState(null);

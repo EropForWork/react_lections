@@ -1,5 +1,6 @@
 .column {
-    padding: 1vw;
-    overflow: hidden;
-    overflow: auto;
+    /* padding: 1vw; */
+    width: 100%;
+    overflow-y: auto;
+    /* overflow: hidden; */
 }

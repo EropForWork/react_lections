@@ -1,4 +1,5 @@
 .slide-text-content-container {
+    /* overflow: hidden; */
     .slide-text-content {
         text-align: left;
     }

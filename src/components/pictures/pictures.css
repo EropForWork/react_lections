@@ -1,16 +1,27 @@
 .image-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)); 
-    gap: 4%;
-    justify-items: center;
-    align-items: center;
-  }
+    gap: 2vw 2vw;
+    justify-items: stretch; /* Заставляет элементы растягиваться по ширине */
+    align-items: stretch;   /* Заставляет элементы растягиваться по высоте */
+}
+
+.image-wrapper {
+    min-height: 500px;  /* Устанавливаем минимальную высоту */
+    width: 100%;
+    border-radius: 1vw;
+    transition: transform 0.2s ease-in-out;
+    background-color: aqua;
+    display: flex;         /* Добавляем flex для содержимого */
+    align-items: center;   /* Центрируем содержимое по вертикали */
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+}
+
+
   
   .image {
     width: 100%;
     height: auto;
-    border-radius: 1vw;
-    transition: transform 0.2s ease-in-out;
     cursor: pointer;
   }
   
