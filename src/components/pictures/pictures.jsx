@@ -1,7 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import './pictures.css';
 import PopupPicture from '../popupPicture/popupPicture';
-import { LazyLoad } from 'react-lazyload';
 
 
 const ImageComponent = ({ value }) => {
@@ -35,7 +34,7 @@ const ImageComponent = ({ value }) => {
         <div className='image-container'>
             {value.map((image, index) => (
                 <div key={index} className='image-wrapper'>
-                    {/* <img loading="lazy" className='image' src={image} alt="" onClick={() => handleClick(image)} /> */}
+                    <img loading="lazy" className='image' src={image} alt="" onClick={() => handleClick(image)} />
                 </div>
             ))}
             {showPopup && <PopupPicture ref={popupRef} images={value} imageSrc={selectedImage} onClose={closePopup} />}

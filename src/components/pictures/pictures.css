@@ -1,30 +1,48 @@
 .image-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)); 
-    gap: 2vw 2vw;
-    justify-items: stretch; /* Заставляет элементы растягиваться по ширине */
-    align-items: stretch;   /* Заставляет элементы растягиваться по высоте */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  gap: 2vw 2vw;
+  justify-items: stretch;
+  align-items: stretch;
 }
 
 .image-wrapper {
-    min-height: 500px;  /* Устанавливаем минимальную высоту */
-    width: 100%;
-    border-radius: 1vw;
-    transition: transform 0.2s ease-in-out;
-    background-color: aqua;
-    display: flex;         /* Добавляем flex для содержимого */
-    align-items: center;   /* Центрируем содержимое по вертикали */
-    justify-content: center; /* Центрируем содержимое по горизонтали */
+  min-height: 33vh;
+  width: 100%;
+  border-radius: 1vw;
+  display: flex;
+  justify-content: center;
 }
 
+.image-wrapper:nth-child(odd) {
+  align-items: flex-start;
+}
 
-  
-  .image {
-    width: 100%;
-    height: auto;
-    cursor: pointer;
+.image-wrapper:nth-child(even) {
+  align-items: flex-end;
+}
+
+.image {
+  width: 90%;
+  border-radius: 1vw;
+  height: auto;
+  cursor: pointer;
+}
+
+.image:hover {
+  animation: scaleUpDown 0.2s ease-in-out forwards;
+}
+
+@keyframes scaleUpDown {
+  0% {
+    transform: scale(1);
   }
-  
-  .image:hover {
+
+  50% {
     transform: scale(1.05);
   }
+
+  100% {
+    transform: scale(1);
+  }
+}

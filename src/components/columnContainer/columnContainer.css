@@ -1,6 +1,8 @@
 .columns-container {
-    width: 100vw;
-    /* height: 100%; */
+    width: 98vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    gap: 1vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20%, 50%));
     grid-auto-flow: column; 
